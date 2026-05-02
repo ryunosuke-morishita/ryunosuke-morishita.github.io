@@ -1,0 +1,72 @@
+  body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header1 {
+        background-color: deepskyblue;
+        color: white;
+        padding: 10px 20px;
+    }
+
+    .header1 h1,
+    .header1 p {
+        margin: 0;
+    }
+
+    .border1 {
+        border: none;
+        margin: 0;
+    }
+
+    .menu{
+        list-style: none;
+        display:flex;
+    }
+
+    .menu li{
+        margin-right:2.5em;
+    }
+
+
+    .nav1 {
+     list-style: none ;
+     display: flex ;
+    }   
+    
+    .nav1 li.current::after{
+     margin: 0.6em;
+    }
+
+   .dir {
+    list-style: none; /* 数字を消す */
+    display: flex;    /* 横並びにする */
+    }
+    
+    .dir li {
+    margin-right: 1.5em;
+    }
+
+    .dir li:not(:first-child)::before {
+    content: "》";
+    margin-right: 0.5em; 
+    margin-left: 0.5em;  
+    color: #087ae5 ;         
+    }
+
+    .sentence {
+        margin-top: 0;
+        padding: 10px 20px 
+    }
+
+   
+    .border3 {
+        border: none;
+        margin: 0 ;
+    }
+
+    .footer {
+        background-color: deepskyblue;
+        color: white;
+        padding: 10px 20px;
+    }
