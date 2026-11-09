@@ -4,7 +4,7 @@
     }
 
     .header1 {
-        background-color: deepskyblue;
+        background-color: dimgray;
         color: white;
         padding: 10px 20px;
     }
@@ -66,7 +66,11 @@
     }
 
     .footer {
-        background-color: deepskyblue;
+        background-color: dimgray;
         color: white;
         padding: 10px 20px;
+    }
+
+    .univ a {
+        color: white;
     }
