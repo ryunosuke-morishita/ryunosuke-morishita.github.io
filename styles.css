@@ -74,3 +74,78 @@
     .univ a {
         color: white;
     }
+    
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden; /* 右側の白い余白を完全に防止 */
+    }
+    
+    .header, .header1, .container-menu-bar, .navi1, .nav, .sentence, .footer, .border1, .border2, .border3 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+/* メニューバー（HOME, MATHEMATICS, STATISTICS, PROGRAMMING）を折り返し対応にする */
+    .menu {
+        display: flex;
+        flex-wrap: wrap;       /* 画面幅を超えたら自動で2段目に折り返す */
+        list-style: none;
+        margin: 0;
+        padding: 10px 16px;
+        gap: 10px 20px;
+    }
+
+    .menu li {
+        width: auto;           /* 固定幅が指定されていても解除 */
+        margin: 0;
+    }
+
+/* 現在の階層表示（.nav1 / .dir）の余白調整 */
+    .nav1, .dir {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding: 8px 16px;
+        gap: 8px;
+    }
+
+    /* 本文エリアと「お知らせ」枠の横はみ出し防止 */
+    .sentence {
+        padding: 0 16px;
+    }
+
+    .inform {
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    /* フッターのテーブルがはみ出さないようにする */
+    .footer table {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* スマホ画面（幅600px以下）のときの文字サイズ調整 */
+    @media (max-width: 600px) {
+        .header1 {
+            padding: 16px;
+        }
+
+        .header1 h1 {
+            font-size: 1.4rem;
+            line-height: 1.3;
+            margin: 0 0 8px 0;
+        }
+
+        .menu {
+            gap: 8px 14px;
+            font-size: 0.9rem;
+        }
+    }
